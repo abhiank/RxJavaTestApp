@@ -4,218 +4,215 @@ package com.abhiank.rxjavatestapp.data.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import org.parceler.Parcel;
+
+@Parcel
 public class Repo {
 
     @SerializedName("id")
     @Expose
-    private Integer id;
+    Integer id;
     @SerializedName("name")
     @Expose
-    private String name;
+    String name;
     @SerializedName("full_name")
     @Expose
-    private String fullName;
+    String fullName;
     @SerializedName("owner")
     @Expose
-    private Owner owner;
+    Owner owner;
     @SerializedName("private")
     @Expose
-    private Boolean _private;
+    Boolean _private;
     @SerializedName("html_url")
     @Expose
-    private String htmlUrl;
+    String htmlUrl;
     @SerializedName("description")
     @Expose
-    private String description;
+    String description;
     @SerializedName("fork")
     @Expose
-    private Boolean fork;
+    Boolean fork;
     @SerializedName("url")
     @Expose
-    private String url;
+    String url;
     @SerializedName("forks_url")
     @Expose
-    private String forksUrl;
+    String forksUrl;
     @SerializedName("keys_url")
     @Expose
-    private String keysUrl;
+    String keysUrl;
     @SerializedName("collaborators_url")
     @Expose
-    private String collaboratorsUrl;
+    String collaboratorsUrl;
     @SerializedName("teams_url")
     @Expose
-    private String teamsUrl;
+    String teamsUrl;
     @SerializedName("hooks_url")
     @Expose
-    private String hooksUrl;
+    String hooksUrl;
     @SerializedName("issue_events_url")
     @Expose
-    private String issueEventsUrl;
+    String issueEventsUrl;
     @SerializedName("events_url")
     @Expose
-    private String eventsUrl;
+    String eventsUrl;
     @SerializedName("assignees_url")
     @Expose
-    private String assigneesUrl;
+    String assigneesUrl;
     @SerializedName("branches_url")
     @Expose
-    private String branchesUrl;
+    String branchesUrl;
     @SerializedName("tags_url")
     @Expose
-    private String tagsUrl;
+    String tagsUrl;
     @SerializedName("blobs_url")
     @Expose
-    private String blobsUrl;
+    String blobsUrl;
     @SerializedName("git_tags_url")
     @Expose
-    private String gitTagsUrl;
+    String gitTagsUrl;
     @SerializedName("git_refs_url")
     @Expose
-    private String gitRefsUrl;
+    String gitRefsUrl;
     @SerializedName("trees_url")
     @Expose
-    private String treesUrl;
+    String treesUrl;
     @SerializedName("statuses_url")
     @Expose
-    private String statusesUrl;
+    String statusesUrl;
     @SerializedName("languages_url")
     @Expose
-    private String languagesUrl;
+    String languagesUrl;
     @SerializedName("stargazers_url")
     @Expose
-    private String stargazersUrl;
+    String stargazersUrl;
     @SerializedName("contributors_url")
     @Expose
-    private String contributorsUrl;
+    String contributorsUrl;
     @SerializedName("subscribers_url")
     @Expose
-    private String subscribersUrl;
+    String subscribersUrl;
     @SerializedName("subscription_url")
     @Expose
-    private String subscriptionUrl;
+    String subscriptionUrl;
     @SerializedName("commits_url")
     @Expose
-    private String commitsUrl;
+    String commitsUrl;
     @SerializedName("git_commits_url")
     @Expose
-    private String gitCommitsUrl;
+    String gitCommitsUrl;
     @SerializedName("comments_url")
     @Expose
-    private String commentsUrl;
+    String commentsUrl;
     @SerializedName("issue_comment_url")
     @Expose
-    private String issueCommentUrl;
+    String issueCommentUrl;
     @SerializedName("contents_url")
     @Expose
-    private String contentsUrl;
+    String contentsUrl;
     @SerializedName("compare_url")
     @Expose
-    private String compareUrl;
+    String compareUrl;
     @SerializedName("merges_url")
     @Expose
-    private String mergesUrl;
+    String mergesUrl;
     @SerializedName("archive_url")
     @Expose
-    private String archiveUrl;
+    String archiveUrl;
     @SerializedName("downloads_url")
     @Expose
-    private String downloadsUrl;
+    String downloadsUrl;
     @SerializedName("issues_url")
     @Expose
-    private String issuesUrl;
+    String issuesUrl;
     @SerializedName("pulls_url")
     @Expose
-    private String pullsUrl;
+    String pullsUrl;
     @SerializedName("milestones_url")
     @Expose
-    private String milestonesUrl;
+    String milestonesUrl;
     @SerializedName("notifications_url")
     @Expose
-    private String notificationsUrl;
+    String notificationsUrl;
     @SerializedName("labels_url")
     @Expose
-    private String labelsUrl;
+    String labelsUrl;
     @SerializedName("releases_url")
     @Expose
-    private String releasesUrl;
+    String releasesUrl;
     @SerializedName("deployments_url")
     @Expose
-    private String deploymentsUrl;
+    String deploymentsUrl;
     @SerializedName("created_at")
     @Expose
-    private String createdAt;
+    String createdAt;
     @SerializedName("updated_at")
     @Expose
-    private String updatedAt;
+    String updatedAt;
     @SerializedName("pushed_at")
     @Expose
-    private String pushedAt;
+    String pushedAt;
     @SerializedName("git_url")
     @Expose
-    private String gitUrl;
+    String gitUrl;
     @SerializedName("ssh_url")
     @Expose
-    private String sshUrl;
+    String sshUrl;
     @SerializedName("clone_url")
     @Expose
-    private String cloneUrl;
+    String cloneUrl;
     @SerializedName("svn_url")
     @Expose
-    private String svnUrl;
+    String svnUrl;
     @SerializedName("homepage")
     @Expose
-    private String homepage;
+    String homepage;
     @SerializedName("size")
     @Expose
-    private Integer size;
+    Integer size;
     @SerializedName("stargazers_count")
     @Expose
-    private Integer stargazersCount;
+    Integer stargazersCount;
     @SerializedName("watchers_count")
     @Expose
-    private Integer watchersCount;
-    @SerializedName("language")
-    @Expose
-    private Object language;
+    Integer watchersCount;
     @SerializedName("has_issues")
     @Expose
-    private Boolean hasIssues;
+    Boolean hasIssues;
     @SerializedName("has_projects")
     @Expose
-    private Boolean hasProjects;
+    Boolean hasProjects;
     @SerializedName("has_downloads")
     @Expose
-    private Boolean hasDownloads;
+    Boolean hasDownloads;
     @SerializedName("has_wiki")
     @Expose
-    private Boolean hasWiki;
+    Boolean hasWiki;
     @SerializedName("has_pages")
     @Expose
-    private Boolean hasPages;
+    Boolean hasPages;
     @SerializedName("forks_count")
     @Expose
-    private Integer forksCount;
-    @SerializedName("mirror_url")
-    @Expose
-    private Object mirrorUrl;
+    Integer forksCount;
     @SerializedName("archived")
     @Expose
-    private Boolean archived;
+    Boolean archived;
     @SerializedName("open_issues_count")
     @Expose
-    private Integer openIssuesCount;
+    Integer openIssuesCount;
     @SerializedName("forks")
     @Expose
-    private Integer forks;
+    Integer forks;
     @SerializedName("open_issues")
     @Expose
-    private Integer openIssues;
+    Integer openIssues;
     @SerializedName("watchers")
     @Expose
-    private Integer watchers;
+    Integer watchers;
     @SerializedName("default_branch")
     @Expose
-    private String defaultBranch;
+    String defaultBranch;
 
     public Integer getId() {
         return id;
@@ -665,14 +662,6 @@ public class Repo {
         this.watchersCount = watchersCount;
     }
 
-    public Object getLanguage() {
-        return language;
-    }
-
-    public void setLanguage(Object language) {
-        this.language = language;
-    }
-
     public Boolean getHasIssues() {
         return hasIssues;
     }
@@ -719,14 +708,6 @@ public class Repo {
 
     public void setForksCount(Integer forksCount) {
         this.forksCount = forksCount;
-    }
-
-    public Object getMirrorUrl() {
-        return mirrorUrl;
-    }
-
-    public void setMirrorUrl(Object mirrorUrl) {
-        this.mirrorUrl = mirrorUrl;
     }
 
     public Boolean getArchived() {

@@ -4,32 +4,35 @@ package com.abhiank.rxjavatestapp.data.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import org.parceler.Parcel;
+
+@Parcel
 public class Links {
 
     @SerializedName("self")
     @Expose
-    private Self self;
+    Self self;
     @SerializedName("html")
     @Expose
-    private Html html;
+    Html html;
     @SerializedName("issue")
     @Expose
-    private Issue issue;
+    Issue issue;
     @SerializedName("comments")
     @Expose
-    private Comments comments;
+    Comments comments;
     @SerializedName("review_comments")
     @Expose
-    private ReviewComments reviewComments;
+    ReviewComments reviewComments;
     @SerializedName("review_comment")
     @Expose
-    private ReviewComment reviewComment;
+    ReviewComment reviewComment;
     @SerializedName("commits")
     @Expose
-    private Commits commits;
+    Commits commits;
     @SerializedName("statuses")
     @Expose
-    private Statuses statuses;
+    Statuses statuses;
 
     public Self getSelf() {
         return self;

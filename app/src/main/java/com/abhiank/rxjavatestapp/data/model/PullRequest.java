@@ -5,98 +5,86 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import org.parceler.Parcel;
+
+@Parcel
 public class PullRequest {
 
     @SerializedName("url")
     @Expose
-    private String url;
+    String url;
     @SerializedName("id")
     @Expose
-    private Integer id;
+    Integer id;
     @SerializedName("html_url")
     @Expose
-    private String htmlUrl;
+    String htmlUrl;
     @SerializedName("diff_url")
     @Expose
-    private String diffUrl;
+    String diffUrl;
     @SerializedName("patch_url")
     @Expose
-    private String patchUrl;
+    String patchUrl;
     @SerializedName("issue_url")
     @Expose
-    private String issueUrl;
+    String issueUrl;
     @SerializedName("number")
     @Expose
-    private Integer number;
+    Integer number;
     @SerializedName("state")
     @Expose
-    private String state;
+    String state;
     @SerializedName("locked")
     @Expose
-    private Boolean locked;
+    Boolean locked;
     @SerializedName("title")
     @Expose
-    private String title;
+    String title;
     @SerializedName("user")
     @Expose
-    private User user;
+    User user;
     @SerializedName("body")
     @Expose
-    private String body;
+    String body;
     @SerializedName("created_at")
     @Expose
-    private String createdAt;
+    String createdAt;
     @SerializedName("updated_at")
     @Expose
-    private String updatedAt;
+    String updatedAt;
     @SerializedName("closed_at")
     @Expose
-    private Object closedAt;
-    @SerializedName("merged_at")
-    @Expose
-    private Object mergedAt;
-    @SerializedName("merge_commit_sha")
-    @Expose
-    private String mergeCommitSha;
-    @SerializedName("assignee")
-    @Expose
-    private Object assignee;
-    @SerializedName("assignees")
-    @Expose
-    private List<Object> assignees = null;
+    String mergeCommitSha;
     @SerializedName("requested_reviewers")
     @Expose
-    private List<RequestedReviewer> requestedReviewers = null;
-    @SerializedName("milestone")
-    @Expose
-    private Object milestone;
+    List<RequestedReviewer> requestedReviewers = null;
     @SerializedName("commits_url")
     @Expose
-    private String commitsUrl;
+    String commitsUrl;
     @SerializedName("review_comments_url")
     @Expose
-    private String reviewCommentsUrl;
+    String reviewCommentsUrl;
     @SerializedName("review_comment_url")
     @Expose
-    private String reviewCommentUrl;
+    String reviewCommentUrl;
     @SerializedName("comments_url")
     @Expose
-    private String commentsUrl;
+    String commentsUrl;
     @SerializedName("statuses_url")
     @Expose
-    private String statusesUrl;
+    String statusesUrl;
     @SerializedName("head")
     @Expose
-    private Head head;
+    Head head;
     @SerializedName("base")
     @Expose
-    private Base base;
+    Base base;
     @SerializedName("_links")
     @Expose
-    private Links links;
+    Links links;
     @SerializedName("author_association")
     @Expose
-    private String authorAssociation;
+    String authorAssociation;
 
     public String getUrl() {
         return url;
@@ -210,22 +198,6 @@ public class PullRequest {
         this.updatedAt = updatedAt;
     }
 
-    public Object getClosedAt() {
-        return closedAt;
-    }
-
-    public void setClosedAt(Object closedAt) {
-        this.closedAt = closedAt;
-    }
-
-    public Object getMergedAt() {
-        return mergedAt;
-    }
-
-    public void setMergedAt(Object mergedAt) {
-        this.mergedAt = mergedAt;
-    }
-
     public String getMergeCommitSha() {
         return mergeCommitSha;
     }
@@ -234,36 +206,12 @@ public class PullRequest {
         this.mergeCommitSha = mergeCommitSha;
     }
 
-    public Object getAssignee() {
-        return assignee;
-    }
-
-    public void setAssignee(Object assignee) {
-        this.assignee = assignee;
-    }
-
-    public List<Object> getAssignees() {
-        return assignees;
-    }
-
-    public void setAssignees(List<Object> assignees) {
-        this.assignees = assignees;
-    }
-
     public List<RequestedReviewer> getRequestedReviewers() {
         return requestedReviewers;
     }
 
     public void setRequestedReviewers(List<RequestedReviewer> requestedReviewers) {
         this.requestedReviewers = requestedReviewers;
-    }
-
-    public Object getMilestone() {
-        return milestone;
-    }
-
-    public void setMilestone(Object milestone) {
-        this.milestone = milestone;
     }
 
     public String getCommitsUrl() {

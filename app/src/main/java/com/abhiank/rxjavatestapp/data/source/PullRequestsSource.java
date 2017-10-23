@@ -29,6 +29,7 @@ public class PullRequestsSource implements PullRequestSourceInterface {
     GithubApi githubApi;
 
     private static final String BASE_URL = "https://api.github.com/";
+    private static final String REPO_PULL_REQUESTS = "repos/{repoOwner}/{repoName}/pulls";
 
     private PullRequestsSource(Context context) {
         this.context = context;
@@ -51,7 +52,7 @@ public class PullRequestsSource implements PullRequestSourceInterface {
 
     interface GithubApi {
 
-        @GET("repos/{repoOwner}/{repoName}/pulls")
+        @GET(REPO_PULL_REQUESTS)
         Observable<List<PullRequest>> getPullRequests(@Path("repoOwner") String repoOwner,
                                                       @Path("repoName") String repoName);
     }

@@ -4,23 +4,26 @@ package com.abhiank.rxjavatestapp.data.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import org.parceler.Parcel;
+
+@Parcel
 public class Base {
 
     @SerializedName("label")
     @Expose
-    private String label;
+    String label;
     @SerializedName("ref")
     @Expose
-    private String ref;
+    String ref;
     @SerializedName("sha")
     @Expose
-    private String sha;
+    String sha;
     @SerializedName("user")
     @Expose
-    private User user;
+    User user;
     @SerializedName("repo")
     @Expose
-    private Repo repo;
+    Repo repo;
 
     public String getLabel() {
         return label;

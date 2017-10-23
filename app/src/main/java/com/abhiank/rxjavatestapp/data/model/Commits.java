@@ -4,11 +4,14 @@ package com.abhiank.rxjavatestapp.data.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import org.parceler.Parcel;
+
+@Parcel
 public class Commits {
 
     @SerializedName("href")
     @Expose
-    private String href;
+    String href;
 
     public String getHref() {
         return href;
